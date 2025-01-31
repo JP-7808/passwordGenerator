@@ -11,10 +11,18 @@ document.getElementById('generate').addEventListener('click', function() {
     const special = '!@#$%^&*()_+{}[]|:;<>,.?/~';
     
     let allChars = '';
-    if (lowercase) allChars += lowerChars;
-    if (uppercase) allChars += upperChars;
-    if (numbers) allChars += numChars;
-    if (specialChars) allChars += special;
+    if (lowercase){
+        allChars += lowerChars;
+    } 
+    if (uppercase) {
+        allChars += upperChars;
+    }
+    if (numbers) {
+        allChars += numChars;
+    }
+    if (specialChars) {
+        allChars += special;
+    }
     
     if (allChars === '') {
         alert('Please select at least one option!');
